@@ -1,9 +1,10 @@
+import Container from "@/components/ui/Container";
 
 const Home = () => {
     return (
-        <div>
-            <h1>home</h1>
-        </div>
+        <Container>
+            <h1>container</h1>
+        </Container>
     );
 };
 
