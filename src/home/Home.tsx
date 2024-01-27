@@ -1,11 +1,13 @@
-import Container from "@/components/ui/Container";
+import HeroSection from "./HeroSection";
+import AboutUsSection from "./AboutUsSection";
 
 const Home = () => {
-    return (
-        <Container>
-            <h1>container</h1>
-        </Container>
-    );
+  return (
+    <div>
+      <HeroSection />
+      <AboutUsSection />
+    </div>
+  );
 };
 
 export default Home;
