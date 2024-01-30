@@ -1,3 +1,6 @@
+import BattaryReplacement from "@/components/serviceStyle/BattaryReplacement";
+import ChipsetReplacement from "@/components/serviceStyle/ChipsetReplacement";
+import DataRecovery from "@/components/serviceStyle/DataRecovery";
 import Container from "@/components/ui/Container";
 
 const ServicesSection = () => {
@@ -12,6 +15,9 @@ const ServicesSection = () => {
         </p>
       </div>
       <div className="grid grid-cols-12 gap-[20px]">
+        <BattaryReplacement />
+        <ChipsetReplacement />
+        <DataRecovery />
         <div className="bg-red-500 h-[415px] rounded-2xl col-span-12">D</div>
         <div className="bg-red-500 h-[415px] rounded-2xl col-span-12 md:col-span-6 lg:col-span-4"></div>
         <div className="bg-red-500 h-[415px] rounded-2xl col-span-12 md:col-span-6 lg:col-span-4"></div>
