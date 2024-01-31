@@ -1,9 +1,7 @@
-import Main from "./components/ui/layouts/Main";
+import MainLayouts from "./components/layouts/MainLayouts";
 
 function App() {
-  return (
-    <Main />
-  );
+  return <MainLayouts />;
 }
 
 export default App;

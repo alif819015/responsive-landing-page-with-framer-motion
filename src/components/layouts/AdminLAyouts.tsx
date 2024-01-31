@@ -1,13 +1,11 @@
 import { Outlet } from "react-router-dom";
-import NavBar from "./NavBar";
 
-const Main = () => {
+const AdminLayouts = () => {
     return (
         <div>
-            <NavBar />
             <Outlet />
         </div>
     );
 };
 
-export default Main;
+export default AdminLayouts;

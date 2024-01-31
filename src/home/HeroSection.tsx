@@ -79,7 +79,7 @@ const HeroSection = () => {
           initial="initial"
           animate="animate"
         >
-          <img className="h-[95%] object-contain" src={macbook} alt="" />
+          <img className="h-[75%] object-contain" src={macbook} alt="" />
         </motion.div>
       </Container>
     </div>
