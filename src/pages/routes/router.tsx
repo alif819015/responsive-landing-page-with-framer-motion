@@ -1,6 +1,6 @@
 import App from "@/App";
 import Home from "@/home/Home";
-import { createBrowserRouter } from "react-router-dom";
+import { Navigate, createBrowserRouter } from "react-router-dom";
 import About from "../about/About";
 import AdminLayouts from "@/components/layouts/AdminLAyouts";
 import Dashboard from "../admin/Dashboard";
@@ -27,16 +27,20 @@ const router = createBrowserRouter([
     element: <AdminLayouts />,
     children: [
       {
-       path: 'dashboard',
-        element: <Dashboard />
+        index: true,
+        element: <Navigate to="/admin/dashboard" />,
+      },
+      {
+        path: "dashboard",
+        element: <Dashboard />,
       },
       {
         path: "service-list",
-        element: <ServiceList />
+        element: <ServiceList />,
       },
       {
-        path: "service-list",
-        element: <AddServices />
+        path: "add-service",
+        element: <AddServices />,
       },
     ],
   },
