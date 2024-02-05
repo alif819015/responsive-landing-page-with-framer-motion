@@ -3,9 +3,9 @@ import SideBar from "./SideBar";
 
 const AdminLayouts = () => {
     return (
-        <div className="grid grid-cols-12 h-[200vh]">
+        <div className="grid grid-cols-12 h-[100vh]">
             <SideBar />
-            <div className="col-span-10">
+            <div className="col-span-10 px-5">
             <Outlet />
             </div>
         </div>
